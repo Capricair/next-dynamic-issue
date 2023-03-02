@@ -1,5 +1,5 @@
 function Test(){
-  return <div>Test Component</div>
+  return <div>Hello, world!</div>
 }
 
 export default Test

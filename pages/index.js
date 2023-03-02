@@ -1,22 +1,16 @@
-import dynamic from "next/dynamic"
 import Head from "next/head"
-
-const Test = dynamic(() => import("/components/test"))
+import styles from "./index.module.scss"
 
 function Homepage() {
   return (
     <>
       <Head>
         <title>Next.js</title>
-        <style jsx>{`
-          body {
-            margin: 0;
-            background: #ccc;
-          }
-        `}</style>
       </Head>
-      <div>
-        <Test />
+      <div className={`${styles.container} container`}>
+        <span>Item 1</span>
+        <span>Item 2</span>
+        <span>Item 3</span>
       </div>
     </>
   )
